@@ -14,7 +14,12 @@ vi demo.sh creéer votre script.
 chmod +x demo.sh => on change de permission .
 
 Pour éxecuter : ./demo.sh pour éxécuter le shell script
-
+C'est quoi une variable dans le shell scripting : les variables sert a stocker des valeurs, ca peut etre un entier, nom de fichier, chaine de caractére
+ou meme des commandes shells.
+Exemple: var= "devopsclass"
+echo $var : il va afficher devopsclass, pour afficher votre varibale utilise $.
+On peut aussi utiliser les variables spécial comme $0, qui refére au nom du script, et nous avons aussi $1,$2,$3 c'est des variables 
+aussi que nous passons au script.
 
 
 *******************************************************************************************************
