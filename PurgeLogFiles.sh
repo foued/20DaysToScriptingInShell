@@ -1,6 +1,6 @@
 # thi programme will delete logs files older than 30 days.
 
-# Author FOued Rezgui
+# Author Foued Rezgui
 # Version 1.0
 
 # ! /bin/bash
