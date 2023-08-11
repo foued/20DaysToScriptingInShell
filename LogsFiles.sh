@@ -11,3 +11,25 @@ On va utiliser la commande find et mtime.
 Find permet de trouver des fichiers et des répertoires.
 mtime c'est modified timestamp indique la dérniére date de modification du fichier.
 mtime +30 -> donne les fichiers supérieures a 30 jours
+
+Ce script tu peux le rendre comme un job control m ou un cron qui tourne chaque x temps.
+
+*********************************Script*********************************
+# ! /bin/bash
+
+echo " ce script permet de supprimer des fichiers logs supérieur a 30 jours"
+path="$1"
+//on peut rajouter un test si le path existe ou non.
+echo $path
+find $path -mtime +30 -exec rm {} \;
+if [[ $? -eq 0 ]]   //si la commande  précedente s'est exécuté avec succés//
+then 
+
+echo " Files deleted avec succés"
+else
+
+echo " l'operation de suppression a échoué"
+fi
+
+
+
