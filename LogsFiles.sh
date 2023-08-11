@@ -21,6 +21,9 @@ echo " ce script permet de supprimer des fichiers logs supérieur a 30 jours"
 path="$1"
 //on peut rajouter un test si le path existe ou non.
 echo $path
+if [ -d $path]
+echo " le repertoire existe"
+fi
 find $path -mtime +30 -exec rm {} \;
 if [[ $? -eq 0 ]]   //si la commande  précedente s'est exécuté avec succés//
 then 
