@@ -2,7 +2,7 @@ Nous avons une application developé en Java qui génere des logs files cette ap
 sous un chemin spécifique par exemple /application/logfile_datelog.log.
 Ces fichiers sont utilsés par les utilisateurs pour débugger l'application en cas de problémes.
 Avec le temps le nombre de ces fichiers augmente et peut saturer le fs.
-On parle de log rotation qui est la politique de définir combine de jours de garde mes logs.
+On parle de log rotation qui est la politique de définir combien de jours de garde mes logs.
 On veut écrire un script shell qui supprime les fichiers qui datent de plus d'un mois.
 
 *****************************************************
