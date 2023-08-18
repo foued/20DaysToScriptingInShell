@@ -9,7 +9,7 @@ On veut écrire un script shell qui supprime les fichiers qui datent de plus d'u
 
 On va utiliser la commande find et mtime.
 Find permet de trouver des fichiers et des répertoires.
-mtime c'est modified timestamp indique la dérniére date de modification du fichier.
+mtime c'est modified timestamp indique la derniére date de modification du fichier.
 mtime +30 -> donne les fichiers supérieures a 30 jours
 
 Ce script tu peux le rendre comme un job control m ou un cron qui tourne chaque x temps.
